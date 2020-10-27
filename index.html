@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Zadanie 3</title>
+</head>
+<body>
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    
+    <div id="main" class="main">
+
+        <div id="slidersRGB" class="slidersRGB">
+            <h3>RGB Values</h3>
+            <ul>
+                <li><label for="Rslider" >R value</label><input type="range" id="Rslider" min="0" max="255" value="0" class="RGBslider">
+                    <input id="Rinput" type="number" min="0" max="255" value="0" class="RGBnumber"></li>
+                <li><label for="Rslider" >G value</label><input type="range" id="Gslider" min="0" max="255" value="0" class="RGBslider">
+                    <input id="Ginput" type="number" min="0" max="255" value="0" class="RGBnumber"></li>
+                <li><label for="Rslider" >B value</label><input type="range" id="Bslider" min="0" max="255" value="0" class="RGBslider">
+                    <input id="Binput" type="number" min="0" max="255" value="0" class="RGBnumber"></li>
+            </ul>
+        </div>
+        <div id="slidersCMYK" class="slidersCMYK">
+            <h3>CMYK values</h3>
+            <ul>                
+                <li><label for="Rslider" >C value (%)</label><input type="range" id="Cslider" min="0" max="100" value="0" class="CMYKslider">
+                    <input id="Cinput" type="number" min="0" max="100" value="0" class="CMYKnumber"></li>
+                
+                    <li><label for="Rslider" >M value (%)</label><input type="range" id="Mslider" min="0" max="100" value="0" class="CMYKslider">
+                    <input id="Minput" type="number" min="0" max="100" value="0" class="CMYKnumber"></li>
+                
+                    <li><label for="Rslider" >Y value (%)</label><input type="range" id="Yslider" min="0" max="100" value="0" class="CMYKslider">
+                    <input id="Yinput" type="number" min="0" max="100" value="0" class="CMYKnumber"></li>
+                
+                    <li><label for="Rslider" >K value (%)</label><input type="range" id="Kslider" min="0" max="100" value="100" class="CMYKslider">
+                    <input id="Kinput" type="number" min="0" max="100" value="100" class="CMYKnumber"></li>
+            </ul>
+        </div>
+        <canvas  id="color">
+
+        </canvas>
+    </div>
+    <h1>RGB Cube</h1>
+    <div class="" id="scene">
+        
+    </div>
+    
+    <script src="cube.js"></script>
+    <script  src="index.js" ></script>
+</body>
+</html>
